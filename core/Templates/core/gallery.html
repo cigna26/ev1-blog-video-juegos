@@ -1,0 +1,50 @@
+{% extends "core/galeria_base.html" %}
+
+
+{% block title %}Galería de Fotos{% endblock %}
+
+{% block content %}
+<header data-bs-theme="dark">
+  <!-- Aquí va todo tu código HTML desde <header> hasta </header> -->
+</header>
+
+<main>
+  <!-- Código de la galería con las tarjetas, etc -->
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Ejemplo de Álbum</h1>
+        <p class="lead text-body-secondary">Breve descripción sobre el álbum a continuación...</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Llamada principal a la acción</a>
+          <a href="#" class="btn btn-secondary my-2">Acción secundaria</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- Aquí pones cada tarjeta (card) -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg aria-label="Placeholder: Imagen miniatura" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Imagen miniatura</text></svg>
+            <div class="card-body">
+              <p class="card-text">Esta es una tarjeta más amplia con texto de apoyo debajo como introducción natural para contenido adicional...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                </div>
+                <small class="text-body-secondary">9 minutos</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repite las tarjetas según sea necesario -->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

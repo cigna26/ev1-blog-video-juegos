@@ -21,4 +21,5 @@ from core import views
 urlpatterns = [
     path('',views.home,name='home'),
     path('admin/', admin.site.urls),
+    path('gallery/',views.gallery,name="gallery"), # Esto lleva a la galeria. 
 ]
