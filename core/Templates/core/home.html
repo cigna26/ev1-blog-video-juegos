@@ -1,11 +1,111 @@
 {% extends 'core/base.html' %}
 
+{% block title %}GameBlog - Tu Blog de Videojuegos{% endblock %}
+
 {% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>¡Bienvenido a GameBlog!</h1>
+        <p>Tu destino definitivo para las últimas noticias, reviews y contenido sobre videojuegos</p>
+        <div class="hero-buttons">
+            <a href="/gallery/" class="btn btn-primary">Ver Galería</a>
+            <a href="#" class="btn btn-secondary">Últimas Noticias</a>
+        </div>
+    </div>
+</section>
 
-    <h1>Inicio</h1>
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus vero autem sint quia, nostrum pariatur! Consectetur, quis quasi, ea deserunt iure quas nostrum corrupti rerum reprehenderit maiores ipsam laboriosam tempore?</p>
+<!-- Sección de características principales -->
+<section class="features-section">
+    <div class="container">
+        <h2>¿Por qué elegir GameBlog?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Noticias Actualizadas</h3>
+                <p>Mantente al día con las últimas novedades del mundo gaming, lanzamientos y actualizaciones.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Reviews Profesionales</h3>
+                <p>Análisis detallados y honestos de los juegos más populares y los títulos indie más prometedores.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Comunidad Activa</h3>
+                <p>Conecta con otros gamers, comparte experiencias y participa en discusiones apasionantes.</p>
+            </div>
 
-{% endblock%}
+        </div>
+    </div>
+</section>
 
-    <p>Fuera del bloque</p>
+<!-- Sección de juegos destacados -->
+<section class="featured-games">
+    <div class="container">
+        <h2>Juegos Destacados</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <h3>Cyber Legends</h3>
+                <p>Un RPG futurista que redefine la experiencia de juego con gráficos impresionantes y una historia épica.</p>
+                <div class="game-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">9.5/10</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <h3>Galaxy Explorer</h3>
+                <p>Explora el universo infinito en este simulador espacial con mecánicas de construcción y exploración.</p>
+                <div class="game-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-text">8.8/10</span>
+                </div>
+            </div>
+            <div class="game-card">
+                <h3>Shadow Realm</h3>
+                <p>Un survival horror que te pondrá los pelos de punta con su atmósfera inquietante y gameplay innovador.</p>
+                <div class="game-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">9.2/10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de estadísticas -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Gamers Activos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Reviews Publicadas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Noticias Diarias</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Cobertura Gaming</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de llamada a la acción -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>¿Listo para sumergirte en el mundo gaming?</h2>
+            <p>Únete a nuestra comunidad y nunca te pierdas las últimas novedades del mundo de los videojuegos.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Únete Ahora</a>
+                <a href="#" class="btn btn-outline">Suscríbete al Newsletter</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
