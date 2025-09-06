@@ -3,46 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}GameBlog - Tu Blog de Videojuegos{% endblock %}</title>
-    <!-- Enlaces a fuentes externas -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Archivo CSS externo con todos los estilos -->
+    <title>{% block title %}GameBlog{% endblock %}</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
 </head>
 <body>
-    <!-- Header y Navegación -->
+    <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <a href="/" class="logo">
-                GameBlog
-            </a>
-
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="/">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/gallery/">Galería</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Comunidad</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contacto">Contacto</a>
-                </li>
+            <a href="/" class="logo">GameBlog</a>
+            <ul class="nav-menu roboto-light">
+                <li class="nav-item"><a href="/">Inicio</a></li>
+                <li class="nav-item"><a href="/gallery/">Galería</a></li>
+                <li class="nav-item"><a href="#">Noticias</a></li>
+                <li class="nav-item"><a href="#">Reviews</a></li>
+                <li class="nav-item"><a href="#">Comunidad</a></li>
+                <li class="nav-item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contenido Principal -->
+
+    <!-- Contenido que cambia -->
     <main class="main-content">
         {% block content %}{% endblock %}
     </main>

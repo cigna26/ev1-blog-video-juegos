@@ -1,4 +1,25 @@
 
+/* Fuente Tinos */
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+  }
+
+  .tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+  }
+
+  /* Fuente Roboto */
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
 
 
 /* ===== RESET Y CONFIGURACIÓN BASE ===== */
@@ -9,7 +30,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Roboto", sans-serif;
     background: #ffffff;
     color: #333333;
     line-height: 1.6;
@@ -408,4 +429,11 @@ p {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.featured-games .container .btn-group.btn-ver-mas {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
 }
