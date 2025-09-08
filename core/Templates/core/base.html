@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- {% block title %}: Define un bloque de título que puede ser sobrescrito por templates hijos -->
     <title>{% block title %}GameBlog{% endblock %}</title>
-    <!-- {% load static %}: Carga la librería de archivos estáticos de Django -->
     {% load static %}
-    <!-- {% static %}: Genera la URL correcta para archivos estáticos -->
     <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
 </head>
 <body>
@@ -26,10 +23,8 @@
         </nav>
     </header>
 
-
     <!-- Contenido que cambia -->
     <main class="main-content">
-        <!-- {% block content %}: Bloque principal de contenido que será reemplazado por templates hijos -->
         {% block content %}{% endblock %}
     </main>
 
